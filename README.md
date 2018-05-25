@@ -28,3 +28,13 @@ http://res.cloudinary.com/knnyczr/image/upload/a_auto_right/v1527270340/IMG_0356
   - [ ] b. Physically printing palettes onto take away cards
 
 - [ ] Collection component
+
+## POST MVP
+
+- [ ] tokens
+
+## CODE SNIPPETS
+
+## FUNCTIONAL COMPONENTS
+
+## ISSUES AND THIER RESOLUTIONS
