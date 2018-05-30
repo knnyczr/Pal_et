@@ -13,7 +13,7 @@ module.exports ={
     return pal_db.one(`
       SELECT *
       FROM pals
-      WHERE id=$1
+      WHERE pals.id=$1
       `, id)
   },
   createOne(){
