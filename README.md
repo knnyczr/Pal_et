@@ -15,13 +15,13 @@ http://res.cloudinary.com/knnyczr/image/upload/a_auto_right/v1527270340/IMG_0356
 
 ## MVP
 
-- [ ] Make API calls
+- [x] Make API calls
 
 - [ ] Express backend
 
-- [ ] SASS / Bulma / Bootstrap (can't decide?)
+- [ ] SASS / Bulma
 
-- [ ] Main Component
+- [x] Main Component
 
   - [ ] a. Main component adding palette to collection (passing props)
 
