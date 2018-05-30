@@ -5,7 +5,13 @@ palModels = require('../models/palette.js')
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.send('this is the get route');
+  palModels.showAll()
+    .then(pals => {
+      res.json({pals:pals});
+    }).catch(err =>{
+      console.log(err)
+      res.status(500).json({err:err})
+    })
 });
 
 module.exports = router;
