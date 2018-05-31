@@ -9,7 +9,6 @@ class App extends Component {
   }
 
   componentDidMount(){
-    // e.preventDefault();
     let url = "http://colormind.io/api/";
     let data = {
       model: "default",
