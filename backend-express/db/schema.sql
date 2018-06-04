@@ -2,11 +2,6 @@ DROP TABLE IF EXISTS pals;
 
 CREATE TABLE pals (
   id SERIAL PRIMARY KEY,
-  rgb1 VARCHAR(13),
-  rgb2 VARCHAR(13),
-  rgb3 VARCHAR(13),
-  rgb4 VARCHAR(13),
-  rgb5 VARCHAR(13),
   hex1 VARCHAR(7),
   hex2 VARCHAR(7),
   hex3 VARCHAR(7),

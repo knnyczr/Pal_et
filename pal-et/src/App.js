@@ -7,13 +7,23 @@ class App extends Component {
     super(props);
     this.state = {
       users:[],
-      palette:[]
+      palette:[],
+      palettes:[]
     }
     this.getpal = this.getpal.bind(this)
   }
 
   componentDidMount(){
     this.getpal()
+    this.thebackend()
+  }
+
+  thebackend(){
+    fetch(`/api`)
+    .then(res => res.json())
+    .then(pals => {
+      this.setState({palettes:pals})
+    })
   }
 
   getpal(){
@@ -27,17 +37,14 @@ class App extends Component {
   }
 
   render() {
+    let palettes = this.state.palettes;
     console.log(this.state.palette)
     return (
       <div className="App">
         <h1 className="logo">PAL ET</h1>
           <div className="pal box is-flex">
             { this.state.palette.map((d,i) => {
-                return <div
-                  className="palette"
-                  key={i}
-                  style={{backgroundColor: `#${d}`}}
-                  >
+                return <div className="palette" key={i} style={{backgroundColor: `#${d}`}}>
                     <h2 className="hex">#{this.state.palette[i]}</h2>
                   </div>
                 })
@@ -45,7 +52,7 @@ class App extends Component {
           </div>
           <button className="button is-rounded is-medium is-success is-focused" onClick={(e)=> this.getpal(e)}>New Pal!</button>
 
-          <Collection />
+          <Collection palettes={palettes} />
       </div>
     );
   }
