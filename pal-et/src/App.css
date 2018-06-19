@@ -28,3 +28,9 @@
   height: 100%;
   width: 100px;
 }
+.creating{
+  display: none;
+}
+.createnewpal{
+  display: inline-block;
+}

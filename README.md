@@ -17,24 +17,18 @@ http://res.cloudinary.com/knnyczr/image/upload/a_auto_right/v1527270340/IMG_0356
 
 - [x] Make API calls
 
-- [ ] Express backend
+- [x] Express backend
 
-- [ ] SASS / Bulma
+- [x] SASS / Bulma
 
 - [x] Main Component
 
-  - [ ] a. Main component adding palette to collection (passing props)
+  - [x] a. Main component adding palette to collection (passing props)
 
   - [ ] b. Physically printing palettes onto take away cards
 
-- [ ] Collection component
+- [x] Collection component
 
 ## POST MVP
 
 - [ ] tokens
-
-## CODE SNIPPETS
-
-## FUNCTIONAL COMPONENTS
-
-## ISSUES AND THIER RESOLUTIONS

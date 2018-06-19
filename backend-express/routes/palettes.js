@@ -26,7 +26,10 @@ router.post('/', (req,res,next) => {
   .then((res) =>{
     res.locals.palModels = data;
   })
-  .then((res) => res.redirect('/api'))
+  .then((res) => {
+    res.redirect('/api')
+    next()
+  })
   .then((res) => res.status(200))
   .catch(err => console.log(err))
 });

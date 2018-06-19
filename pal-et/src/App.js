@@ -51,6 +51,16 @@ class App extends Component {
             }
           </div>
           <button className="button is-rounded is-medium is-success is-focused" onClick={(e)=> this.getpal(e)}>New Pal!</button>
+        <form method="post" action="/api/">
+        <div className="creating">
+          <input name="hex1" value={`# + ${this.state.palette.hex1}`}/>
+          <input name="hex2" value={`# + ${this.state.palette.hex2}`}/>
+          <input name="hex3" value={`# + ${this.state.palette.hex3}`}/>
+          <input name="hex4" value={`# + ${this.state.palette.hex4}`}/>
+          <input name="hex5" value={`# + ${this.state.palette.hex5}`}/>
+        </div>
+          <input className="createnewpal button is-rounded is-medium is-success is-focused" type="submit" value="Add New Pal!"/>
+        </form>
 
           <Collection palettes={palettes} />
       </div>
